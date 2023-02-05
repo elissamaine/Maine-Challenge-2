@@ -1,3 +1,7 @@
+* {
+    box-shadow: border-box;
+}
+
 :root {
     --cream: rgb(252, 231, 199);
     --lavender: rgb(128, 128, 192);
@@ -7,6 +11,29 @@
 
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--indigo);
+    background-color: var(--cream);
+    line-height: 1.5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+header {
+    padding: 0;
+
+}
 
 .picture-of-me img {
     max-width: 300px;

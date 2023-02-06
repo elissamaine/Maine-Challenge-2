@@ -2,6 +2,7 @@
     box-shadow: border-box;
 }
 
+/*color pallet used on the site*/
 :root {
     --cream: rgb(252, 238, 218);
     --lavender: rgb(128, 128, 192);
@@ -28,7 +29,6 @@ h3 {
 }
 
 p {
-    margin: 0;
     line-height: 1.7;
     text-indent: 2%;
 }
@@ -54,6 +54,7 @@ header h1 {
     font-size: 4vw;
 }
 
+/*navigation bar in header*/
 nav {
     display: flex;
     flex-direction: row;
@@ -87,6 +88,7 @@ main {
     margin-bottom: 45px;
 }
 
+/*banner image under the header*/
 .hero-banner {
     background-image: url("../images/purple-flowers.jpg")/*, linear-gradient(180deg, var(--light-purple) 0%, var(--lavender 100%))*/;
     background-size: cover;
@@ -110,6 +112,7 @@ main {
     border-radius: 50px;
 } 
 
+
 .page-wrapper {
     max-width: 90%;
     margin-left: auto;
@@ -126,6 +129,7 @@ main {
     justify-content: space-between;
 }
 
+/*header is displayed on the left side of the content*/
 .page-section > h2 {
     flex: 0 0 20%;
     text-align: right;
@@ -141,6 +145,8 @@ main {
 
 .page-section p {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about-me div {
@@ -151,6 +157,7 @@ main {
     flex-wrap: wrap;
 }
 
+/*had a lot of trouble fitting the picture in the about me section, in the future I want rearange and change things so that it fits in the about me section and looks more astheticly pleasing*/
 .picture-of-me {
    background-color: var(--lavender);
    border: 4px var(--light-purple);
@@ -159,6 +166,7 @@ main {
    border-radius: 10px;
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .picture-of-me img {
@@ -172,6 +180,7 @@ main {
     justify-content: center;
 }
 
+/*application links*/
 .flex-item {
     border: 5px dashed var(--lavender);
     border-radius: 20px;
@@ -191,6 +200,7 @@ main {
     font-size: 0.9rem;
 }
 
+/*makes first desplayed application larger than the others*/
 .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
@@ -229,6 +239,7 @@ main {
     border-radius: 15px;
 }
 
+/*creates a hover box shadow on contact links*/
 #contact address a:hover,
 #contact address a:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--lavender);
@@ -236,12 +247,13 @@ main {
     background-size: 100% 88%;
 }
 
+/*background images for the portfolio*/
 .future {
     background-image: url("../images/laptop.jpg");
 }
 
 .portfolio {
-    background-image: url("../images/coming-soon.jpg");
+    background-image: url("../images/portfolio.PNG");
 }
 
 .prework {
@@ -258,6 +270,8 @@ footer {
     text-align: center;
 }
 
+
+/*makes sure the site still looks aplealinmg when looking on a moble device*/
 @media screen and (max-width: 980px) {
     header {
         padding: 0 0 10px 0;
@@ -309,5 +323,9 @@ footer {
     #content address {
         flex-direction: column;
         align-items: flex-start;
+    }    
+    
+    .picture-of-me {
+        display: block;
     }
 }

@@ -6,9 +6,11 @@ This portfolio was created to show peers and future employers my skill level and
 
 ## Screenshots
 
-![screenshot of desktop view]()
-![screenshot of tablet view]()
-![screenshot of mobile phone view]()
+![screenshot of desktop view PART 1](assets/images/deployed-website-desktop1.PNG)
+![screenshot of desktop view PART 2](assets/images/deployed-website-desktop2.PNG)
+![screenshot of tablet view](assets/images/deployed-website-tablet.PNG)
+![screenshot of mobile phone view](assets/images/deployed-website-phone.PNG)
 
 ## Link to Deployed Application
 
+[deployed website](https://elissamaine.github.io/Maine-Challenge-2/)

@@ -3,7 +3,7 @@
 }
 
 :root {
-    --cream: rgb(252, 231, 199);
+    --cream: rgb(252, 238, 218);
     --lavender: rgb(128, 128, 192);
     --light-purple: rgb(200, 191, 231);
     --indigo: rgb(43, 49, 104);
@@ -116,6 +116,34 @@ main {
     margin-right: auto;
 }
 
+
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px dotted var(--indigo);
+    font-size: 1.3rem;
+    line-height: 1.1;
+}
+
+.page-section > div {
+    flex: 0 0 77%;
+}
+
+.page-section p {
+    margin-bottom: 20px;
+}
 .picture-of-me {
    background-color: var(--lavender);
    border: 4px var(--light-purple);
@@ -123,58 +151,87 @@ main {
    max-width: 303px;
    border-radius: 10px;
    margin-left: 0;
+   flex-direction: row;
 }
 
-.picture-of-me p {
+/*.picture-of-me p {
     color: var(--cream);
     font-size: 1.2rem;
     text-align: center;
-}
+}*/
 
 .picture-of-me img {
     max-width: 300px;
     border-radius: 10px;
 }
-
-.page-section {
-    margin: 25px 0px;
-    padding: 10px 0px;
+.flex-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.flex-item {
+    border: 5px dashed var(--lavender);
+    border-radius: 20px;
+    background-color: var(--light-purple);
+    color: var(--cream);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+}
 
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
 
+.flex-item:hover {
+    background-color: var(--cream);
+}
 
+.flex-item div {
+    background-color: var(--lavender);
+    padding: 5px 10px;
+    border-radius: 0 10px 10px 0;
+}
 
+.flex-item h3 {
+    font-size: 1.5rem;
+}
 
+#contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
 
+#contact address a {
+    color: var(--cream);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-style: normal;
+    white-space: nowrap;
+    background-color: var(--indigo);
+    border-radius: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#contact address a:hover,
+#contact address a:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--lavender);
+    transform: translateY(-0.25em);
+    background-size: 100% 88%;
+}
 
 

@@ -18,7 +18,7 @@ body{
     color: var(--indigo);
     background-color: var(--cream);
     line-height: 1.5;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1,
@@ -116,8 +116,6 @@ main {
     margin-right: auto;
 }
 
-
-
 .page-section {
     margin: 25px 0;
     padding: 10px 0;
@@ -144,14 +142,22 @@ main {
 .page-section p {
     margin-bottom: 20px;
 }
+
+#about-me div {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .picture-of-me {
    background-color: var(--lavender);
    border: 4px var(--light-purple);
    padding: 10px;
    max-width: 303px;
    border-radius: 10px;
-   margin-left: 0;
-   flex-direction: row;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 /*.picture-of-me p {
@@ -164,11 +170,12 @@ main {
     max-width: 300px;
     border-radius: 10px;
 }
-.flex-container {
+
+/*.flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+}*/
 
 .flex-item {
     border: 5px dashed var(--lavender);
@@ -195,7 +202,7 @@ main {
 }
 
 .flex-item:hover {
-    background-color: var(--cream);
+    background-color: #6d6c6c;
 }
 
 .flex-item div {
@@ -234,4 +241,24 @@ main {
     background-size: 100% 88%;
 }
 
+.future {
+    background-image: url("../images/laptop.jpg");
+}
 
+.portfolio {
+    background-image: url("../images/coming-soon.jpg");
+}
+
+.prework {
+    background-image: url("../images/prework-study-guide.png");
+}
+
+.challenge1 {
+    background-image: url("../images/first-challenge.png");
+}
+
+footer {
+    color: var(--cream);
+    background-color: var(--lavender);
+    text-align: center;
+}

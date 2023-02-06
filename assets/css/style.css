@@ -143,11 +143,12 @@ main {
     margin-bottom: 20px;
 }
 
-#about-me div {
-    justify-content: space-between;
+.about-me div {
+    justify-content: center;
+    display: inline;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
 .picture-of-me {
@@ -160,22 +161,16 @@ main {
    flex-wrap: wrap;
 }
 
-/*.picture-of-me p {
-    color: var(--cream);
-    font-size: 1.2rem;
-    text-align: center;
-}*/
-
 .picture-of-me img {
     max-width: 300px;
     border-radius: 10px;
 }
 
-/*.flex-container {
+.flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}*/
+}
 
 .flex-item {
     border: 5px dashed var(--lavender);
@@ -261,4 +256,58 @@ footer {
     color: var(--cream);
     background-color: var(--lavender);
     text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+    }
+    
+    header nav {
+        justify-content: center;
+    }
+
+    .page-section > h2,
+    .page-section > div {
+        flex: 0 0 100%;
+    }
+
+    .page-section > h2 {
+        border-right: none;
+        border-bottom: 4px dotted var(--indigo);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+        flex-basis: 100%;
+    }
+    
+    .flex-item:first-child {
+        min-height: 150px;
+    }
+
+    .hero-banner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #content address {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

@@ -264,6 +264,10 @@ main {
     background-image: url("../images/first-challenge.png");
 }
 
+.cooksCompanion {
+    background-image: url("../images/cooks-companion.png");
+}
+
 footer {
     color: var(--cream);
     background-color: var(--lavender);
